@@ -1,7 +1,7 @@
 from django.db import models
 
 
-class Drink(models.Model):
+class DrinkModel(models.Model):
     TYPE_CHOICE_SCOTCH = "Scotch"
     TYPE_CHOICE_BOURBON = "Bourbon"
     TYPE_CHOICE_IRISH = "Irish"

@@ -11,19 +11,18 @@ from rest_framework.views import APIView
 from drink_api.permissions import IsAdmin
 from .serializers import DrinkSerializer
 
-from drink_api.models import Drink
+from drink_api.models import DrinkModel
 
 
 class DrinkListCreate(APIView):
     permission_classes = [IsAuthenticated, IsAdmin]
 
     def get(self, request):
-        drinks = Drink.objects.all()
+        drinks = DrinkModel.objects.all()
         serializer = DrinkSerializer(drinks, many=True)
 
         return Response(serializer.data)
 
     def post(self, request):
         pass
-    pass
 

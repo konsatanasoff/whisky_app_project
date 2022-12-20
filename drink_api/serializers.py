@@ -1,9 +1,9 @@
 from rest_framework import serializers
 
-from drink_api.models import Drink
+from drink_api.models import DrinkModel
 
 
 class DrinkSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Drink
+        model = DrinkModel
         fields = '__all__'

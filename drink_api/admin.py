@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import Drink
+from .models import DrinkModel
 
-admin.site.register(Drink)
+admin.site.register(DrinkModel)
 # admin.site.register(User)
